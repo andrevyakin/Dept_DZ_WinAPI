@@ -87,19 +87,16 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	{
 	
 	case WM_TIMER:
-		
-		//Получить координаты клиентского окна и сохранить их в rect
-		GetClientRect(hWnd, &rect);
-
+				
 		//Получить координаты рабочего стола
-		GetClientRect(NULL, &desktop);
+		GetWindowRect(GetDesktopWindow(), &desktop);
 
 		top += 10 * dir;
 
 		//вывод окна с измененными координатами
 		SetWindowPos(hWnd, HWND_TOP, 100, top, 500, 500, SWP_SHOWWINDOW);
 		
-		if (top == 600)
+		if (top + 500 == desktop.bottom)
 			dir = -1;
 		else if (top == 0)
 			dir = 1;
@@ -110,7 +107,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		KillTimer(hWnd, ID_Timer);
 		break;
 	case WM_LBUTTONDBLCLK:
-		SetTimer(hWnd, ID_Timer, 100, NULL);
+		SetTimer(hWnd, ID_Timer, 10, NULL);
 		break;
 	case WM_DESTROY:
 		PostQuitMessage(0);
