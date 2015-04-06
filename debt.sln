@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "debt", "debt\debt.vcxproj", "{B9F31D12-F059-42B7-ABF8-288BDA4775BA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dept1", "dept1\dept1.vcxproj", "{80A2A90C-7205-4692-A05A-1A9868B25886}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{B9F31D12-F059-42B7-ABF8-288BDA4775BA}.Debug|Win32.Build.0 = Debug|Win32
 		{B9F31D12-F059-42B7-ABF8-288BDA4775BA}.Release|Win32.ActiveCfg = Release|Win32
 		{B9F31D12-F059-42B7-ABF8-288BDA4775BA}.Release|Win32.Build.0 = Release|Win32
+		{80A2A90C-7205-4692-A05A-1A9868B25886}.Debug|Win32.ActiveCfg = Debug|Win32
+		{80A2A90C-7205-4692-A05A-1A9868B25886}.Debug|Win32.Build.0 = Debug|Win32
+		{80A2A90C-7205-4692-A05A-1A9868B25886}.Release|Win32.ActiveCfg = Release|Win32
+		{80A2A90C-7205-4692-A05A-1A9868B25886}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
